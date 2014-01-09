@@ -1,0 +1,38 @@
+--- origsrc/qtmultimedia-opensource-src-5.2.0/config.tests/wmf/wmf.pro	2013-12-08 11:10:16.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.2.0/config.tests/wmf/wmf.pro	2014-01-05 17:49:58.261630800 -0600
+@@ -3,4 +3,4 @@ CONFIG += console
+ 
+ SOURCES += main.cpp
+ 
+-LIBS += -lstrmiids -ldmoguids -luuid -lmsdmo -lole32 -loleaut32 -lMf -lMfuuid -lMfplat -lPropsys
++LIBS += -lstrmiids -ldmoguids -luuid -lmsdmo -lole32 -loleaut32 -lmf -lmfuuid -lmfplat -lpropsys
+--- origsrc/qtmultimedia-opensource-src-5.2.0/config.tests/wmp/wmp.pro	2013-12-08 11:10:16.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.2.0/config.tests/wmp/wmp.pro	2014-01-05 17:50:08.223200500 -0600
+@@ -3,4 +3,4 @@ CONFIG += console
+ 
+ SOURCES += main.cpp
+ 
+-LIBS += -lstrmiids -lole32 -lOleaut32 -luser32 -lgdi32
++LIBS += -lstrmiids -lole32 -loleaut32 -luser32 -lgdi32
+--- origsrc/qtmultimedia-opensource-src-5.2.0/config.tests/wshellitem/main.cpp	2013-12-08 11:10:16.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.2.0/config.tests/wshellitem/main.cpp	2014-01-05 17:49:08.258770800 -0600
+@@ -39,7 +39,7 @@
+ **
+ ****************************************************************************/
+ 
+-#include <ShlObj.h>
++#include <shlobj.h>
+ 
+ int main(int, char**)
+ {
+--- origsrc/qtmultimedia-opensource-src-5.2.0/src/plugins/directshow/player/directshowmetadatacontrol.cpp	2013-12-08 11:10:15.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.2.0/src/plugins/directshow/player/directshowmetadatacontrol.cpp	2014-01-05 18:31:09.187752300 -0600
+@@ -57,7 +57,7 @@
+ #endif
+ 
+ #ifndef QT_NO_SHELLITEM
+-#include <ShlObj.h>
++#include <shlobj.h>
+ #include <propkeydef.h>
+ #include <private/qsystemlibrary_p.h>
+ 
