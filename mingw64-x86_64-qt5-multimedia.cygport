@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross qt5-qmake
 
 NAME="mingw64-x86_64-qt5-multimedia"
-VERSION=5.6.2
+VERSION=5.9.3
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Qt5 Multimedia library for Win64 toolchain"
@@ -14,4 +14,4 @@ investments made on one platform across many others."
 HOMEPAGE="https://www.qt.io/"
 SRC_URI="http://download.qt.io/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtmultimedia-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qtmultimedia-opensource-src-${VERSION}"
-PATCH_URI="5.2.0-case-sensitivity.patch"
+PATCH_URI="5.9-case-sensitivity.patch"

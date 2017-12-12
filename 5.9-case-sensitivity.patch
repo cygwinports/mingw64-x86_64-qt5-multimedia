@@ -1,0 +1,33 @@
+--- origsrc/qtmultimedia-opensource-src-5.9.3/config.tests/wshellitem/main.cpp	2017-11-08 08:04:46.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.9.3/config.tests/wshellitem/main.cpp	2017-12-11 00:45:53.173232800 -0600
+@@ -26,7 +26,7 @@
+ **
+ ****************************************************************************/
+ 
+-#include <ShlObj.h>
++#include <shlobj.h>
+ 
+ int main(int, char**)
+ {
+--- origsrc/qtmultimedia-opensource-src-5.9.3/src/multimedia/configure.json	2017-11-08 08:04:46.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.9.3/src/multimedia/configure.json	2017-12-11 00:47:13.089439900 -0600
+@@ -126,7 +126,7 @@
+             "label": "WMF",
+             "test": "wmf",
+             "sources": [
+-                { "libs": "-lstrmiids -ldmoguids -luuid -lmsdmo -lole32 -loleaut32 -lMf -lMfuuid -lMfplat -lPropsys" }
++                { "libs": "-lstrmiids -ldmoguids -luuid -lmsdmo -lole32 -loleaut32 -lmf -lmfuuid -lmfplat -lpropsys" }
+             ]
+         }
+     },
+--- origsrc/qtmultimedia-opensource-src-5.9.3/src/plugins/directshow/player/directshowmetadatacontrol.cpp	2017-11-08 08:04:46.000000000 -0600
++++ src/qtmultimedia-opensource-src-5.9.3/src/plugins/directshow/player/directshowmetadatacontrol.cpp	2017-12-11 00:46:19.297777300 -0600
+@@ -64,7 +64,7 @@
+ #endif
+ 
+ #if QT_CONFIG(wshellitem)
+-#include <ShlObj.h>
++#include <shlobj.h>
+ #include <propkeydef.h>
+ #include <private/qsystemlibrary_p.h>
+ 
